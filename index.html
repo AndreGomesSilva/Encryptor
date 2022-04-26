@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palantír</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+<body>
+    <h1> Palantír </h1>
+    <div class="flex-container">
+        <div class="blockTop">
+
+            <div class="messageBlock">
+                <textarea id="boxTextResult"
+                    placeholder="Here your message will be displayed after encrypt or decrypt"></textarea>
+                <button id="copyButton" onclick="copyMessage()">Copy</button>
+            </div>
+
+        </div>
+
+        <div class="blockBottom">
+
+            <div class="encryptBlock">
+                <textarea id="boxTextEncrypt" placeholder="Encrypt your message"></textarea>
+                <button id="encryptButton" onclick="btnMessageToEncrypt()">Encrypt</button>
+            </div>
+
+            <div class="decryptBlock">
+                <textarea id="boxTextDecrypt" placeholder="Decrypt your message"></textarea>
+                <button id="decryptButton" onclick="btnMessageToDecrypt()">Decrypt</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
